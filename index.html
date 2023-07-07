@@ -15,7 +15,6 @@
       rel="stylesheet"
     />
     <link href="css/styles.css" rel="stylesheet" />
-
     <title>Студія</title>
   </head>
 
@@ -416,31 +415,33 @@
     <div class="backdrop is-hidden5" data-modal>
       <div class="modal container">
         <h2 class="form-head">Your Order</h2>
+
         <button class="x-button" data-modal-close type="button">
           <svg class="x-svg" width="18" height="18">
             <use href="./images/icons.svg#icon-x-modal"></use>
           </svg>
         </button>
         <ul class="list">
-          <li>
+          <li class="order-list-item">
             <div class="form-checkbox-item">
-              <h3>Cabbage Basket</h3>
-              <p>Plant</p>
+              <div class="item-text-div">
+                <h3>Cabbage Basket</h3>
+                <p>Plant</p>
+              </div>
               <img
-                srcset="./images/cabbage.jpg, ./images/cabbage2x@2x.jpg"
-                src="/images/cabbage.jpg"
+                srcset="./images/cabbage.png, ./images/cabbage2x@2x.png"
+                src="/images/cabbage.png"
                 alt="photo"
-                width="120"
                 class="portfolio-img"
               />
               <input
-                class="privacy-checkbox visually-hidden"
-                id="user-privacy"
-                name="user-privacy"
+                class="checkbox visually-hidden"
+                id="first-checkbox"
+                name="first-checkbox"
                 type="checkbox"
                 value="true"
               />
-              <label class="check-label" for="user-privacy">
+              <label class="check-label" for="first-checkbox">
                 <span class="check-svg-square">
                   <svg class="check-svg" width="10" height="8">
                     <use href="./images/icons.svg#icon-check"></use>
@@ -448,13 +449,13 @@
               ></label>
             </div>
           </li>
-          <li>
+          <li class="order-list-item">
             <div class="form-checkbox-item">
               <h3>Tomato Basket</h3>
               <p>Plant</p>
               <img
-                srcset="./images/tomato.jpg, ./images/tomato2x@2x.jpg"
-                src="./images/portfolio-2.jpg"
+                srcset="./images/tomato.png, ./images/tomato2x@2x.png"
+                src="./images/tomato.png"
                 alt="photo"
                 width="120"
                 class="portfolio-img"
@@ -474,13 +475,13 @@
               ></label>
             </div>
           </li>
-          <li>
+          <li class="order-list-item">
             <div class="form-checkbox-item">
               <h3>Vegetables Basket</h3>
               <p>Plant</p>
               <img
-                srcset="./images/vegetables.jpg, ./images/vegetables2x@2x.jpg"
-                src="./images/portfolio-2.jpg"
+                srcset="./images/vegetables.png, ./images/vegetables2x@2x.png"
+                src="./images/portfolio-2.png"
                 alt="photo"
                 width="120"
                 class="portfolio-img"
@@ -561,7 +562,7 @@
       </div>
     </div>
 
-    <div class="menu-container js-menu-container" id="mobile-menu">
+    <!-- <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="js-close-menu x-button">
         <svg class="x-svg" width="8" height="8">
           <use href="./images/icons.svg#icon-x-modal"></use>
@@ -622,7 +623,7 @@
           </li>
         </ul>
       </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
     <script src="js/mobile-menu.js" defer></script>
     <script
